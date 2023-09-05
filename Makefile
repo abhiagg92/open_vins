@@ -1,8 +1,8 @@
 nproc=$(shell python3 -c 'import multiprocessing; print( max(multiprocessing.cpu_count() - 1, 1))')
 use_integ=$(ILLIXR_INTEGRATION)
 
-CXX := clang++-10
-CC := clang-10
+CXX := clang++-11
+CC := clang-11
 
 .PHONY: dbg plugin.dbg.so
 plugin.dbg.so: dbg
